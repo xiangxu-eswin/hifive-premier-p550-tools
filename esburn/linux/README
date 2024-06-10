@@ -1,0 +1,31 @@
+EsBurnTool is a linux based programming tool which is
+used to program bootchain, kernel and rootfs images to the board.
+
+Bootchain image needs to be flashed to SPI Flash present on SoM Board
+while kernel and rootfs will be stored on Carrier Board eMMC.
+
+EsBurnTool will program images to board based on configurations
+present in config.ini file.
+
+Prerequisite:
+	- Create a directory named "image".
+		e.g. mkdir -p /home/user/hf106/image
+	- Copy bootchain, kernel and rootfs images into "image" directory.
+	- Configure "image" directory path in config.ini file.
+		e.g. directory = /home/user/hf106/image
+	- Configure serial port in config.ini file.
+		- hf106 creates four serial ports as like below.
+			/dev/ttyUSB0
+			/dev/ttyUSB1
+			/dev/ttyUSB2
+			/dev/ttyUSB3
+		- Out of these four ports, configure third port.
+		
+		e.g. serial = /dev/ttyUSB2
+
+Usage:
+	sudo ./EsBurnTool -c config.ini
+
+---------------------------------------------------------
+MD5 : 819453c4bb67c4499ea96c07bd6438ba
+---------------------------------------------------------

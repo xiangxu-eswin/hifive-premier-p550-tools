@@ -1,0 +1,30 @@
+EsBurnTool.exe is a windows based programming tool which is
+used to program bootchain, kernel and rootfs images to the board.
+
+Bootchain image needs to be flashed to SPI Flash present on SoM Board
+while kernel and rootfs will be stored on Carrier Board eMMC.
+
+EsBurnTool.exe will program images to board based on configurations
+present in config.ini file.
+
+Prerequisite:
+	- Install USB to serial driver in the Windows host system.
+		- Extract UsbDriverTool.zip file present under drivers directory.
+		- Run UsbDriverTool.exe file present under UsbDriverTool directory.
+		- Select vid|pid|interface as 0403|6011|02.
+		- Install "FTDI CMD" driver.
+	- Create a directory named "image".
+	- Copy bootchain, kernel and rootfs images into "image" directory.
+	- Configure "image" directory path in config.ini file.
+		e.g. directory = D:\hf106\image
+	- Configure serial port in config.ini file.
+		e.g. serial = COM11
+
+Usage:
+	1] Open console e.g. Windows PowerShell
+	2] Run EsBurnTool.exe
+		e.g. .\EsBurnTool.exe -c config.ini
+
+---------------------------------------------------------
+MD5 : a3b4c90c239e8272f0578b804be345e1
+---------------------------------------------------------
