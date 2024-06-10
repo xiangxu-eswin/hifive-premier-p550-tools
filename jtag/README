@@ -1,0 +1,44 @@
+JTAG interface is used for device debugging purpose. openocd tool is
+used to debug using JTAG interface.
+
+Prerequisite:
+	- Download latest pre-built openocd tool from link below.
+	  Link: "https://github.com/xpack-dev-tools/openocd-xpack/releases"
+
+	- For linux system, use package e.g. "xpack-openocd-0.12.0-3-linux-x64.tar.gz"
+	  For windows system, use package e.g. "xpack-openocd-0.12.0-3-win32-x64.zip"
+
+	- Extract above package
+
+	For windows system
+	------------------
+	- Install libusb-win32 driver
+		- Download zadig-2.9.exe
+		- Run zadig-2.9.exe
+		- Select "List All Devices" under "Options" menu
+		- Select "Quad RS232-HS (Interface 0)" from dropdown menu
+		- Select "libusb-win32 (v1.4.0.0)" driver under "Driver" dropdown menu
+		- Install driver
+
+Usage:
+	
+For linux system
+----------------
+	- Connect USB Type C port of board to linux system USB port
+	- Run command as below.
+		sudo ./openocd -f openocd_mcpu.cfg
+	- Open telnet console
+		e.g. telnet 127.0.01 4444
+	- Perform debugging like memory read/write etc
+		
+For windows system
+------------------
+	- Connect USB Type C port of board to windows system USB port
+    - Open console e.g. Windows PowerShell
+    - Run command as below.
+        .\openocd.exe -f openocd_mcpu.cfg
+	- Open telnet console using e.g. putty.exe
+		- ip address: 127.0.01
+		- port: 4444
+	- Perform debugging like memory read/write etc
+
