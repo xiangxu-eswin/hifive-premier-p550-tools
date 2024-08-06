@@ -10,14 +10,10 @@ Firmware flashing steps
 
 2] Copy mcu-firmware directory to PC.
 
-3] Extract riscv-openocd-0.11.0-2021.11.1-x86_64-linux-ubuntu14.tar file.
-	e.g
-	# cd mcu-firmware
-	# tar -xf riscv-openocd-0.11.0-2021.11.1-x86_64-linux-ubuntu14.tar
+3] Download jtag prgramming tool i.e. "openocd" into PC.
 
-4] Run "start_stm32.sh" script in PC.
+4] Set openocd tool path in "start_stm32.sh" script and run the script.
 	e.g.
-	# cd mcu-firmware
 	# ./start_stm32.sh 
 
 5] Open telnet console in PC.
@@ -37,17 +33,17 @@ Release Notes
 ===============================================================================
 
 Release version : 2.5
-MD5             : 2343af01d84b441afa61609325da8054
+MD5             : 07c70bd66d6bbec85ae9dbc217cfd90d
 
 -----------+
 Change Log |
 -----------+
 
 -------------------------------------------------------------------------------
-Version : 2.5, 2024-07-22
-MD5     : 2343af01d84b441afa61609325da8054
+Version : 2.5, 2024-08-05
+MD5     : 07c70bd66d6bbec85ae9dbc217cfd90d
 -------------------------------------------------------------------------------
 CR: Support som console redirection to UART or Telnet.
 TR: Make the four buttons(Power, SOC Reset, Recovery, MCU RESET) be handled as
     soon as the MCU LED is on.
-
+TR: Fix the bug of Bootsel IO pins was changed by mistake
