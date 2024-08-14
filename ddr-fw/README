@@ -1,8 +1,8 @@
-ddr5_fw.bin is a DDR firmware binary which is used to initialise
+ddr_fw.bin is a DDR firmware binary which is used to initialise
 on-board SDRAM DDR device.
 
 -------+
 Release|
 -------+
-Version : 2024-08-02
-MD5     : 1214a5ee5b4bbb64d4a020b2d388b76f
+Version : 1.2
+MD5     : 720a0d7b3daad0b28e0aad6449595dd6
