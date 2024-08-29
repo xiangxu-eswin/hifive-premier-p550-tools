@@ -8,11 +8,14 @@ EsBurnTool.exe will program images to board based on configurations
 present in config.ini file.
 
 Prerequisite:
-	- Install USB to serial driver in the Windows host system.
-		- Extract UsbDriverTool.zip file present under drivers directory.
-		- Run UsbDriverTool.exe file present under UsbDriverTool directory.
-		- Select vid|pid|interface as 0403|6011|02.
-		- Install "FTDI CMD" driver.
+	- Install USB to serial convertor FT4232H device driver in
+	  the Windows host system.
+		e.g.
+		- Install the driver using UsbDriverTool.exe tool.
+		  (https://visualgdb.com/UsbDriverTool)
+			- Run UsbDriverTool.exe tool
+			- Select vid|pid|interface as 0403|6011|02.
+			- Install "FTDI CMD" driver.
 	- Create a directory named "image".
 	- Copy bootchain, kernel and rootfs images into "image" directory.
 	- Configure "image" directory path in config.ini file.
