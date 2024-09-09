@@ -27,9 +27,3 @@ Usage:
 	1] Open console e.g. Windows PowerShell
 	2] Run EsBurnTool.exe
 		e.g. .\EsBurnTool.exe -c config.ini
-
--------+
-Release|
--------+
-Version : 2024-08-02
-MD5     : 79b0358e61988f4e3d6af700ec620183

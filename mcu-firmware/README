@@ -26,9 +26,3 @@ Firmware flashing steps
 		Note: Ensure that "Programming Finished" string is printed after
 		programming completes for the successful programming.
 	> reset
-
--------+
-Release|
--------+
-Version : 2.5, 2024-08-05
-MD5     : 07c70bd66d6bbec85ae9dbc217cfd90d

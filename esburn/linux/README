@@ -25,9 +25,3 @@ Prerequisite:
 
 Usage:
 	sudo ./EsBurnTool -c config.ini
-
--------+
-Release|
--------+
-Version : 2024-08-02
-MD5     : c6d850e4159646ac305c8b035a53a24d

@@ -1,8 +1,2 @@
 ddr_fw.bin is a DDR firmware binary which is used to initialise
 on-board SDRAM DDR device.
-
--------+
-Release|
--------+
-Version : 1.2
-MD5     : 720a0d7b3daad0b28e0aad6449595dd6
